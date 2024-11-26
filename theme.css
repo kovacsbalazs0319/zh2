@@ -1,0 +1,19 @@
+h1
+{
+    font-style: italic;
+}
+
+h4
+{
+    font-weight: normal;
+}
+
+table th:nth-child(odd)
+{
+    background-color: orange;
+}
+
+.link_text{
+    color: purple;
+    text-decoration: none;
+}

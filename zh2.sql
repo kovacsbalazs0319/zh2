@@ -89,5 +89,8 @@ select * from futar;
 select * from motor;
 select * from furgon;
 
+select furgon.rendszam as rendszam, ifnull(sum(futar.fizetes),0) as osszfizetes , ifnull(min(futar.fizetes),0) as minfizetes from
+futar right outer join furgon on furgon.id = futar.furgon_id where teherbiras > 800 group by furgon.rendszam
+
 
 
